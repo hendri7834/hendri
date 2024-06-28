@@ -21,10 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('fakultas', App\Http\Controllers\FakultasController::class)->parameters(['fakultas' => 'fakultas']);
+Route::resource('program-studi', App\Http\Controllers\ProgramStudiController::class);
