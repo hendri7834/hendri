@@ -345,6 +345,10 @@ return [
                     'text' => 'Fakultas',
                     'url' => '/fakultas',
                 ],
+                [
+                    'text' => 'Data Sekolah',
+                    'url' => '/sekolah',
+                ],
             ],
         ],
         ['header' => 'labels'],
